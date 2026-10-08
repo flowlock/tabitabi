@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>欢迎来到卢森堡 Visit Luxembourg</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei",sans-serif;}
+body{color:#333;background:#fff;line-height:1.7;}
+
+/* 顶部横幅 */
+.hero{
+    width:100%;
+    height:70vh;
+   background:url("abandon.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:flex-end;
+    padding:60px 40px;
+    color:white;
+    /* 文字加深阴影，后续加图文字看得清 */
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.hero-text h1{font-size:3rem;margin-bottom:12px;}
+
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+section{padding:70px 0;}
+
+h2{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:#222;
+    border-left:5px solid #2b7bba;
+    padding-left:14px;
+}
+h3{font-size:1.3rem;margin:16px 0 10px;color:#222;}
+
+.alert-box{
+    background:#effccf;
+    padding:24px;
+    border-radius:10px;
+    border-left:5px solid #b0e14f90;
+    margin-bottom:40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* 双列网格 */
+.grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:36px;
+    margin-top:32px;
+}
+/* 卡片美化：圆角+阴影 */
+.card{
+    background:#ffffff;
+    border-radius:14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    overflow:hidden;
+    transition:0.25s ease;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+.card > div, .card > p, .card > h3, .card > a{
+    padding:0 20px;
+}
+.card p{padding-right:20px;padding-bottom:16px;}
+.card h3{padding-top:16px;}
+
+/* 图片占位框【美化版】 */
+.card-img-placeholder{
+    width:100%;
+    height:240px;
+    background:#f2f6f9;
+    border:2px dashed #94b8d8;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#447799;
+    font-size:16px;
+    font-weight:500;
+}
+
+.link-btn{
+    display:inline-block;
+    color:#2b7bba;
+    margin:8px 20px 20px;
+    text-decoration:none;
+    font-weight:bold;
+    border-bottom:2px solid #2b7bba;
+    transition:0.2s;
+}
+.link-btn:hover{
+    color:#185488;
+    border-color:#185488;
+}
+
+.bg-light{background:#f7f9fb;}
+ul{padding-left:24px;margin-bottom:16px;}
+
+/* 移动端适配，手机自动变成单列 */
+@media(max-width:768px){
+.grid-2{grid-template-columns:1fr;gap:28px;}
+.hero-text h1{font-size:2rem;}
+.hero{height:55vh;padding:30px 20px;}
+section{padding:50px 0;}
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="container hero-text">
+    <h1>你好！欢迎来到卢森堡！</h1>
+  </div>
+</div>
+
+<div class="container">
+  <section>
+    <div class="alert-box">
+      <h3>气象预警</h3>
+      <p>气象预警信息请查阅卢森堡官方LU‑Alert平台获取全部预警提示与安全建议。</p >
+      <p><strong>高温干旱：共同守护自然环境</strong></p >
+      <p>高温与持续干旱时期，山林火灾风险大幅上升。遵循简单防护措施，共同保护卢森堡森林与自然景观。
+      <br><a class="link-btn" href=" ">查看卢森堡官方防火建议</a ></p >
+    </div>
+
+    <p>来探索迷人的卢森堡，一座中世纪风情与现代优雅并存的欧洲旅游目的地。近距离感受古老堡垒、繁茂森林与都市风光交织的独特景致。</p >
+    <p style="margin-top:12px;">游览卢森堡市的联合国世界遗产，探访全国五大特色地区，体验徒步、骑行，或是在大自然中放松休憩。</p >
+    <p style="margin-top:12px;">从首都的花园古特兰，到南部米内特工业区的红色地貌；从北部丘陵崎岖的艾斯莱克，到穆勒塔尔的岩壁与森林，再到摩泽尔河谷郁郁葱葱的葡萄园，卢森堡拥有丰富多样的风景。</p >
+  </section>
+</div>
+
+<section class="bg-light">
+<div class="container">
+  <h2>卢森堡旅行体验</h2>
+  <p>多数游客从首都开启旅程：在这里，知名艺术家与新人相遇，古老城墙与现代建筑相映成趣。这座城市充满活力，文化、夜生活、商务活动交融于此。卢森堡全国公共交通全部免费，出行十分便捷。游客可以随时选择前往下个城市。</p >
+  <p style="margin-top:12px;">对于热爱户外运动的游客，卢森堡是他们心仪的徒步、骑行胜地。对于心怀憧憬、热爱文化的游客，这里有城堡宫殿、博物馆，还有数不胜数的打卡圣地。丰富的特色美食让卢森堡同样是美食爱好者的天堂。在卢森堡，这⼀切都等你来体验。</p >
+
+  <div class="grid-2">
+    <div class="card">
+      <!-- 图片占位：后续替换为 < img src="你的图片路径" alt="卢森堡乡野"> -->
+      <img src="Summer.jpg" alt="卢森堡乡野" class="card-img-placeholder">
+      <h3>美好假期，尽在卢森堡！</h3>
+      <p>以全新视角重新认识卢森堡，感受当地风土人情，体验导览行程和充满惊喜的人文景观。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <!-- 图片占位：后续替换为 < img src="你的图片路径" alt="徒步峡谷"> -->
+     <img src="hiking.jpg" alt="徒步峡谷" class="card-img-placeholder">
+      <h3>徒步旅行</h3>
+      <p>卢森堡拥有欧洲密度最高的徒步路线网，是徒步爱好者的理想目的地。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <!-- 图片占位：后续替换为 < img src="你的图片路径" alt="文化老城"> -->
+      <img src="culture.jpg" alt="文化老城" class="card-img-placeholder">
+      <h3>文化体验</h3>
+      <p>卢森堡吸收从欧洲到世界各地文化的精华，发展出了多姿多彩的本地文化。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <!-- 图片占位：后续替换为 < img src="你的图片路径" alt="骑行"> -->
+      <img src="cycling.jpg" alt="骑行" class="card-img-placeholder">
+      <h3>骑行之旅</h3>
+      <p>卢森堡拥有约600公里骑行公路、700公里山地自行车道，是骑行爱好者的天堂。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <!-- 图片占位：后续替换为 < img src="你的图片路径" alt="卢森堡首都"> -->
+      <img src="capital.jpg" alt="卢森堡首都" class="card-img-placeholder">
+      <h3>卢森堡首都</h3>
+      <p>卢森堡市是欧洲知名城市，遍布旅游景点，公共交通免费出行。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <!-- 图片占位：后续替换为 < img src="你的图片路径" alt="本地美食"> -->
+      <img src="food.jpg" alt="本地美食" class="card-img-placeholder">
+      <h3>当地饮食</h3>
+      <p>品尝本地特色食材，感受卢森堡传统饮食风味。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <h2>开始规划你的行程</h2>
+  <p>来探索这个地处欧洲中心，面向世界开放的多元文化小国吧。你可以从比利时、法国、德国乘坐火车直达首都。从卢森堡机场搭乘巴士20分钟即可到达市区。使用卢森堡旅游官方官方App、地图与旅行指南，打造一场难忘旅程。</p >
+
+  <div class="grid-2">
+    <div class="card">
+      <img src="publication.jpg" alt="官方刊物手册" class="card-img-placeholder">
+      <h3>官方刊物与手册</h3>
+      <p>想要深入了解卢森堡？这里提供杂志、宣传册与旅行地图资源。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <img src="accommodation.jpg" alt="住宿" class="card-img-placeholder">
+      <h3>住宿</h3>
+      <p>规划你的旅行，找到理想的住宿地点。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <img src="glance.jpg" alt="实用出行信息" class="card-img-placeholder">
+      <h3>实用出行信息</h3>
+      <p>卢森堡速览，实用咨询让你的旅途轻松又尽兴。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <img src="getting here.jpg" alt="如何抵达" class="card-img-placeholder">
+      <h3>如何抵达</h3>
+      <p>卢森堡位于欧洲中心，交通便捷。飞机、长途大巴、自驾或者低碳火车，多种方式供你选择。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <img src="around.jpg" alt="境内出行" class="card-img-placeholder">
+      <h3>境内出行</h3>
+      <p>卢森堡是全球首个全国公共交通全部免费的国家，为你提供免费、便捷、可持续的出行。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <img src="tourism.jpg" alt="无障碍旅游" class="card-img-placeholder">
+      <h3>无障碍旅游</h3>
+      <p>众多景点支持舒适无障碍通行。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="bg-light">
+<div class="container">
+  <h2>Visit‑Luxembourg 官方应用</h2>
+  <ul>
+    <li>专属你的旅行体验</li>
+    <li>LuxembourgPass享受免费入场与折扣</li>
+    <li>精选游玩建议与导览路线</li>
+  </ul>
+
+  <h3 style="margin-top:24px;">阅读我们的旅行故事</h3>
+  <p>你可以在这些故事里认识有趣的本地居民，获取地道的旅行贴士，为下一段旅程寻找灵感。跟随贝特堡奇幻公园巨人的足迹，随着女演员⼀同游览梦幻古堡，徒步前往卢森堡最古老的聚居地之一，还能受邀走进两位厨艺大师的美食餐厅厨房，一探究竟。</p >
+
+  <div class="grid-2">
+    <div class="card">
+      <!-- 图片占位：后续替换为 < img src="你的图片路径" alt="城堡遐想"> -->
+      <img src="castle.jpg" alt="城堡遐想" class="card-img-placeholder">
+      <h3>畅游梦幻城堡</h3>
+      <p>城堡曾是权力的象征，现在也可以是让人放飞遐想的好去处。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <img src="fairytale.jpg" alt="童话公园" class="card-img-placeholder">
+      <h3>贝特堡童话公园探险步道</h3>
+      <p>贝特堡童话主题乐园，全世界著名的打卡地点。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+    <div class="card">
+      <img src="ravine.jpg" alt="峡谷森林徒步" class="card-img-placeholder">
+      <h3>穿行原始峡谷森林</h3>
+      <p>古代树木、珍稀植物与缓缓流淌的溪流，在曼特纳赫峡谷感受卢森堡原始自然风光。</p >
+      <a class="link-btn" href="#">了解更多</a >
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <h2>目的地分区介绍</h2>
+  <p>探索首都与五大特色区域</p >
+  <ul style="margin-top:16px;line-height:2;">
+    <li><strong>卢森堡市：首都</strong> <a class="link-btn" href="#">了解更多</a ></li>
+    <li><strong>艾斯莱克：北部山地</strong> <a class="link-btn" href="#">了解更多</a ></li>
+    <li><strong>古特兰：中西部田园</strong> <a class="link-btn" href="#">了解更多</a ></li>
+    <li><strong>穆勒塔尔：卢森堡小瑞士</strong> <a class="link-btn" href="#">了解更多</a ></li>
+    <li><strong>摩泽尔：葡萄酒河谷</strong> <a class="link-btn" href="#">了解更多</a ></li>
+    <li><strong>米内特：红岩工业地带</strong> <a class="link-btn" href="#">了解更多</a ></li>
+  </ul>
+</div>
+</section>
+</body>
+</html>
